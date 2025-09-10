@@ -13,7 +13,7 @@
             <th>Nível</th>
             <th>Email</th>
             <th>Telefones</th>
-            <th>Iníco do vínculo</th>
+            <th>Início do vínculo</th>
             <th>Área</th>
         </tr>
     </thead>

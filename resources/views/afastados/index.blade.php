@@ -20,8 +20,8 @@
                <td><a href="{{route('pessoas.show', $afastado['codpes'])}}">{{$afastado['nompes']}}</a></td> 
                <td>{{$afastado['nomabvset']}}</td> 
                <td>{{$afastado['sitoco']}}</td> 
-               <td>{{date('d/m/Y', strtotime($afastado['dtainisitoco']))}}</td> 
-               <td>{{date('d/m/Y', strtotime($afastado['dtafimsitoco']))}}</td> 
+               <td data-sort="{{ \Carbon\Carbon::parse(strtotime($afastado['dtainisitoco']))->format('Ymd') }}">{{ \Carbon\Carbon::parse(strtotime($afastado['dtainisitoco']))->format('d/m/Y') }}</td>
+               <td data-sort="{{ \Carbon\Carbon::parse(strtotime($afastado['dtafimsitoco']))->format('Ymd') }}">{{ \Carbon\Carbon::parse(strtotime($afastado['dtafimsitoco']))->format('d/m/Y') }}</td>
                <td>{{$afastado['codema']}}</td> 
                <td>{{implode(" / ", $afastado['telefones'])}}</td> 
             </tr>
